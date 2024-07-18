@@ -20,7 +20,7 @@ PC用のスタイル
   body {
     max-width: 1080px;
     min-width: 960px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
   }
 
   /* ヘッダー */
@@ -28,26 +28,23 @@ PC用のスタイル
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
   }
 
-  #logo {
-    flex: 1;
-  }
 
   /* ナビゲーションのレイアウト */
   #nav-pc {
     text-align: right;
     font-size: 14px;
-    flex: 2;
     display: flex;
-    justify-content: flex-end;
+    gap: 20px;
+    margin-left: auto;
   }
 
   /* ナビゲーションのリンクの装飾設定 */
   #nav-pc > a {
     text-decoration: none;
-    margin-left: 20px;
-  }
+    }
 
   #nav-pc > a:link {
     color: #0d0d0d;
@@ -81,7 +78,6 @@ PC用のスタイル
     min-width: 375px;
     margin: 0;
   }
-
   header {
     display: flex;
     justify-content: space-between;
@@ -94,13 +90,14 @@ PC用のスタイル
   }
   /* ハンバーガーメニュー */
   #menu-sp {
-    float: right;
-    padding: 0;
+    display: block;
+    margin-right: 80px;
   }
+
   /* スマホ用ナビゲーション */
   #nav-sp {
     background-color: #ce933e;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     height: 100%;
@@ -114,6 +111,7 @@ PC用のスタイル
     top: 20px;
     right: 20px;
   }
+
   /* ナビゲーションメニュー用ロゴ */
   #logo-sp {
     margin: 80px 0 30px 20px;
